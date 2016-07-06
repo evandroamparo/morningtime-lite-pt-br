@@ -25,7 +25,7 @@
 
 									<div class="entry clearfix" itemprop="articleBody">
 										<?php the_content(); ?>
-										<?php wp_link_pages( array( 'before' => '<div class="clear"></div><div class="page-link"><span>' . __( 'Pages:', 'morningtime-lite' ) . '</span>', 'after' => '</div>' ) ); ?>
+										<?php wp_link_pages( array( 'before' => '<div class="clear"></div><div class="page-link"><span>' . __( 'Páginas:', 'morningtime-lite' ) . '</span>', 'after' => '</div>' ) ); ?>
 
 										<!-- Archive -->
 										<?php foreach(morning_time_lite_posts_by_year() as $year => $posts) : ?>

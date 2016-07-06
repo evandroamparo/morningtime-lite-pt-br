@@ -45,7 +45,7 @@ class wplook_about_me_widget extends WP_Widget {
 
 			<p>
 				<label for="<?php echo esc_attr($this->get_field_id('about')); ?>">
-					<?php _e('About me:', 'morningtime-lite'); ?>
+					<?php _e('Sobre mim:', 'morningtime-lite'); ?>
 				</label>
 				<textarea cols="25" rows="10" class="widefat" id="<?php echo esc_attr($this->get_field_id('about')); ?>" name="<?php echo esc_attr($this->get_field_name('about')); ?>" type="text"><?php echo esc_attr($about); ?></textarea>
 			</p>

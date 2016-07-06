@@ -12,7 +12,7 @@
 <article <?php post_class("post post-single"); ?> itemscope itemtype="https://schema.org/BlogPosting">
 	<header class="page-head">
 		<h3 class="widget-title">
-			<?php _e( 'Nothing Found', 'morningtime-lite' ); ?>
+			<?php _e( 'Nada encontrado', 'morningtime-lite' ); ?>
 		</h3>
 	</header><!-- /.post-head -->
 
@@ -20,12 +20,12 @@
 
 		<?php if ( is_search() ) : ?>
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'morningtime-lite' ); ?></p>
+			<p><?php _e( 'Desculpe, mas nada foi encontrado com a sua pesquisa. Por favor tente novamente com palavras algumas palavras chave diferentes.', 'morningtime-lite' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php else : ?>
 
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'morningtime-lite' ); ?></p>
+			<p><?php _e( 'Não podemos encontrar o que você está procurando. Talvez fazer uma pesquisa possa ajudar.', 'morningtime-lite' ); ?></p>
 
 		<?php endif; ?>
 	</div><!-- /.entry -->

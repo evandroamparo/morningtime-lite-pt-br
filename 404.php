@@ -17,8 +17,8 @@
 						<article class="page" itemscope itemtype="https://schema.org/BlogPosting">
 							<div class="entry" itemprop="articleBody">
 								<h1 class="error-title text-center"><?php _e('404', 'morningtime-lite'); ?></h1>
-								<h2 class="error-subtitle text-center"><?php _e('Oops! The page you were looking for could not be found.', 'morningtime-lite'); ?></h2>
-								<p class="text-center"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php _e('Visit Home Page', 'morningtime-lite'); ?></a></p>
+								<h2 class="error-subtitle text-center"><?php _e('Oops! A página que você estava procurando não pode ser encontrada.', 'morningtime-lite'); ?></h2>
+								<p class="text-center"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php _e('Vá para a página inicial', 'morningtime-lite'); ?></a></p>
 							</div><!-- /.entry -->
 						</article><!-- /.post -->
 					</div><!-- /.content -->

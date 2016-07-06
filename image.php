@@ -76,7 +76,7 @@
 							<div class="post-body">
 								<div class="entry entry-caption" itemprop="articleBody">
 									<?php the_content(); ?>
-									<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'morningtime-lite' ), 'after' => '</div>' ) ); ?>
+									<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Páginas:', 'morningtime-lite' ), 'after' => '</div>' ) ); ?>
 								</div><!-- /.entry -->
 							</div><!-- /.post-body -->
 

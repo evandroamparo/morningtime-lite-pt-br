@@ -28,8 +28,8 @@
 
 	<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="nav-below">
-			<div class="nav-previous fleft"><?php previous_comments_link( __( '<span class="meta-nav">&larr;</span> Older Comments', 'morningtime-lite' ) ); ?></div>
-			<div class="nav-next fright"><?php next_comments_link( __( 'Newer Comments <span class="meta-nav">&rarr;</span>', 'morningtime-lite' ) ); ?></div>
+			<div class="nav-previous fleft"><?php previous_comments_link( __( '<span class="meta-nav">&larr;</span> Comentários mais antigos', 'morningtime-lite' ) ); ?></div>
+			<div class="nav-next fright"><?php next_comments_link( __( 'Comentários mais recentes <span class="meta-nav">&rarr;</span>', 'morningtime-lite' ) ); ?></div>
 			<div class="clear"></div>
 		</nav> <!-- .navigation -->
 	<?php endif; // check for comment navigation ?>
@@ -39,7 +39,7 @@
 <?php  // or, if we don't have comments:
 	if ( ! comments_open()  && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'morningtime-lite' ); ?></p>
+		<p class="no-comments"><?php _e( 'Comentários encerrados.', 'morningtime-lite' ); ?></p>
 
 <?php endif; // end ! comments_open() ?>
 <?php morning_time_lite_comment_form(); ?>

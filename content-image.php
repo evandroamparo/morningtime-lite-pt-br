@@ -31,7 +31,7 @@
 				<?php the_post_thumbnail('morning-time-lite-featured-image'); ?>
 
 				<?php  the_content( sprintf(
-						__( 'Continue reading %s', 'morningtime-lite' ), the_title( '<span class="screen-reader-text">', '</span>', false )
+						__( 'Continue lendo %s', 'morningtime-lite' ), the_title( '<span class="screen-reader-text">', '</span>', false )
 					) );
 				?>
 
@@ -39,7 +39,7 @@
 		<?php } else { ?>
 			<div class="post-image">
 				<?php  the_content( sprintf(
-						__( 'Continue reading %s', 'morningtime-lite' ), the_title( '<span class="screen-reader-text">', '</span>', false )
+						__( 'Continue lendo %s', 'morningtime-lite' ), the_title( '<span class="screen-reader-text">', '</span>', false )
 					) );
 				?>
 			</div>
@@ -91,15 +91,15 @@
 		<div class="post-image">
 			<?php
 					the_content( sprintf(
-						__( 'Continue reading %s', 'morningtime-lite' ), the_title( '<span class="screen-reader-text">', '</span>', false )
+						__( 'Continue lendo %s', 'morningtime-lite' ), the_title( '<span class="screen-reader-text">', '</span>', false )
 					) );
 
 					wp_link_pages( array(
-						'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'morningtime-lite' ) . '</span>',
+						'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Páginas:', 'morningtime-lite' ) . '</span>',
 						'after'       => '</div>',
 						'link_before' => '<span>',
 						'link_after'  => '</span>',
-						'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'morningtime-lite' ) . ' </span>%',
+						'pagelink'    => '<span class="screen-reader-text">' . __( 'Página', 'morningtime-lite' ) . ' </span>%',
 						'separator'   => '<span class="screen-reader-text">, </span>',
 					) );
 				?>
@@ -108,7 +108,7 @@
 		<div class="post-body">
 
 			<div class="post-actions">
-				<a href="<?php the_permalink(); ?>" class="button tiny grey"><?php _e('Read more', 'morningtime-lite'); ?></a>
+				<a href="<?php the_permalink(); ?>" class="button tiny grey"><?php _e('Leia mais', 'morningtime-lite'); ?></a>
 			</div><!-- /.post-actions -->
 		</div><!-- /.post-body -->
 	</article><!-- /.post -->

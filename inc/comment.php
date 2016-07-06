@@ -35,7 +35,7 @@ function morning_time_lite_comment( $comment, $args, $depth ) {
 			<div class="comment-text" itemprop="commentText">
 				<?php if ( $comment->comment_approved == '0' ) : ?>
 					<div class="comment-awaiting-moderation">
-						<?php _e( 'Your comment is awaiting moderation.', 'morningtime-lite' ); ?>
+						<?php _e( 'Seu comentário está agurdando moderação.', 'morningtime-lite' ); ?>
 					</div>
 					<br />
 					<?php endif; ?>
@@ -65,7 +65,7 @@ function morning_time_lite_comment( $comment, $args, $depth ) {
 			<div class="comment-text" itemprop="commentText">
 				<?php if ( $comment->comment_approved == '0' ) : ?>
 					<div class="comment-awaiting-moderation">
-						<?php _e( 'Your comment is awaiting moderation.', 'morningtime-lite' ); ?>
+						<?php _e( 'Seu comentário está agurdando moderação.', 'morningtime-lite' ); ?>
 					</div>
 					<br />
 					<?php endif; ?>
