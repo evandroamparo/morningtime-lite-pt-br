@@ -94,26 +94,26 @@ function morning_time_lite_comment_form( $args = array(), $post_id = null ) {
 
 	$fields =  array(
 
-		'author' => '<p class="comment-form-author columns medium-4">' . '<label for="author">' . __( 'Name', 'morningtime-lite' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
+		'author' => '<p class="comment-form-author columns medium-4">' . '<label for="author">' . __( 'Nome', 'morningtime-lite' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
 		'<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>',
-		'email'  => '<p class="comment-form-email columns medium-4"><label for="email">' . __( 'Email', 'morningtime-lite' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
+		'email'  => '<p class="comment-form-email columns medium-4"><label for="email">' . __( 'E-mail', 'morningtime-lite' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
 		'<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></p>',
 		'url'    => '<p class="comment-form-url columns medium-4"><label for="url">' . __( 'Website', 'morningtime-lite' ) . '</label>' .
 		'<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
 	);
-	$required_text = sprintf( ' ' . __('Required fields are marked %s', 'morningtime-lite' ), '<span class="required"><a>*</a></span>' );
+	$required_text = sprintf( ' ' . __('Campos obrigatórios estão marcados %s', 'morningtime-lite' ), '<span class="required"><a>*</a></span>' );
 	$defaults = array(
 		'fields'		=> apply_filters( 'comment_form_default_fields', $fields ),
-		'comment_field'		=> '<p class="comment-form-comment"><label for="comment">' . __( 'Comment', 'morningtime-lite' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
+		'comment_field'		=> '<p class="comment-form-comment"><label for="comment">' . __( 'Comentário', 'morningtime-lite' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
 		'must_log_in'		=> '<p class="must-log-in">' .  sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.', 'morningtime-lite' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
 		'logged_in_as'		=> '<p class="logged-in-as columns medium-12">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'morningtime-lite' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
-		'comment_notes_before' => '<p class="comment-notes columns medium-12">' . __( 'Your email address will not be published.', 'morningtime-lite' ) . ( $req ? $required_text : '' ) . '</p>',
+		'comment_notes_before' => '<p class="comment-notes columns medium-12">' . __( 'Seu endereço de e-mail não será publicado.', 'morningtime-lite' ) . ( $req ? $required_text : '' ) . '</p>',
 		'id_form'						=> 'commentform',
 		'id_submit'					=> 'submit',
-		'title_reply'				=> __( 'Leave a Comment', 'morningtime-lite' ),
-		'title_reply_to'		=> __( 'Leave a Reply to %s', 'morningtime-lite' ),
-		'cancel_reply_link'	=> __( 'or Cancel reply', 'morningtime-lite' ),
-		'label_submit'			=> __( 'Send Comment', 'morningtime-lite' ),
+		'title_reply'				=> __( 'Deixe um comentário', 'morningtime-lite' ),
+		'title_reply_to'		=> __( 'Deixe uma resposta para %s', 'morningtime-lite' ),
+		'cancel_reply_link'	=> __( 'ou cancele a resposta', 'morningtime-lite' ),
+		'label_submit'			=> __( 'Comentar', 'morningtime-lite' ),
 	);
 
 	$args = wp_parse_args( $args, apply_filters( 'comment_form_defaults', $defaults ) );	?>
