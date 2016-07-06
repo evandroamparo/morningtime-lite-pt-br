@@ -126,11 +126,11 @@ if ( ! function_exists( 'morning_time_lite_content_navigation' ) ) {
 	function morning_time_lite_content_navigation( $nav_id ) { ?>
 			<div class="post-nav">
 				<div class="post-nav-prev">
-					<?php previous_post_link( '%link', __( '<i class="fa fa-angle-left"></i>  Previous post', 'morningtime-lite' ) ); ?>
+					<?php previous_post_link( '%link', __( '<i class="fa fa-angle-left"></i>  Post anterior', 'morningtime-lite' ) ); ?>
 				</div><!-- /.post-nav-prev -->
 
 				<div class="post-nav-next">
-					<?php next_post_link( '%link', __( 'Next post <i class="fa fa-angle-right"></i>', 'morningtime-lite' ) ); ?>
+					<?php next_post_link( '%link', __( 'Próximo post <i class="fa fa-angle-right"></i>', 'morningtime-lite' ) ); ?>
 				</div><!-- /.post-nav-next -->
 			</div><!-- /.post-nav -->
 		<?php
@@ -312,11 +312,11 @@ if ( ! function_exists( 'morning_time_lite_content_navigation' ) ) {
 		if ( $wp_query->max_num_pages > 1 ) : ?>
 			<nav id="<?php echo esc_attr($nav_id); ?>">
 				<?php if ( get_previous_posts_link() ) { ?>
-					<div class="nav-previous"><?php previous_posts_link( __( '<span class="mobile-nav">Previous</span>', 'morningtime-lite' ) ); ?></div>
+					<div class="nav-previous"><?php previous_posts_link( __( '<span class="mobile-nav">Anterior</span>', 'morningtime-lite' ) ); ?></div>
 				<?php } ?>
 
 				<?php if ( get_next_posts_link() ) { ?>
-					<div class="nav-next"><?php next_posts_link( __( '<span class="mobile-nav">Next</span>', 'morningtime-lite' ) ); ?></div>
+					<div class="nav-next"><?php next_posts_link( __( '<span class="mobile-nav">Próximo</span>', 'morningtime-lite' ) ); ?></div>
 				<?php } ?>
 					<div class="clear"></div>
 			</nav><!-- #nav -->
@@ -335,7 +335,7 @@ if ( ! function_exists( 'morning_time_lite_doctitle' ) ) {
 	function morning_time_lite_doctitle() {
 
 		if ( is_search() ) {
-		  $content = __('Search Results for:', 'morningtime-lite');
+		  $content = __('Resultados da pesquisa para:', 'morningtime-lite');
 		  $content .= ' ' . esc_html(stripslashes(get_search_query()));
 		}
 
@@ -351,12 +351,12 @@ if ( ! function_exists( 'morning_time_lite_doctitle' ) ) {
 		}
 
 		elseif ( is_author() ) {
-			$content = __("Author's Posts", 'morningtime-lite');
+			$content = __("Posts do autor", 'morningtime-lite');
 
 		}
 
 		elseif ( is_404() ) {
-			$content = __('Page Not Found', 'morningtime-lite');
+			$content = __('Página não encontrada', 'morningtime-lite');
 		}
 
 
